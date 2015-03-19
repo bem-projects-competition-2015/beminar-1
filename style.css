@@ -1,24 +1,24 @@
-#page {
+.page {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
-#header, #footer {
+.header, .footer {
     flex: 1 100%;
     -webkit-flex: 1 100%;
 }
 
-a {
+.link {
     color: color: #44b;
     text-decoration: none;
     transition: color .15s ease-out;
 }
 
-a:hover {
+.link:hover {
     color: #e00;
 }
 
-#header, #footer {
+.header, .footer {
     display: flex;
     display: -webkit-flex;
     padding: 0 100px;
@@ -27,7 +27,7 @@ a:hover {
     justify-content: space-between;
 }
 
-h1 {
+.logo {
     margin: 0;
     padding: 20px 10px 10px 0;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ h1 {
     line-height: 24px;
 }
 
-#menu {
+.menu {
     display: flex;
     display: -webkit-flex;
     margin: 0;
@@ -45,19 +45,19 @@ h1 {
     -webkit-justify-content: center;
 }
 
-#menu li {
+.menu__item {
     margin-left: 40px;
     list-style-type: none;
     font-size: 14px;
     line-height: 24px;
 }
 
-#menu li a {
+.menu__link {
     display: block;
     padding: 20px 10px;
 }
 
-#headline {
+.headline {
     display: flex;
     display: -webkit-flex;
     padding: 20px 100px 20px 80px;
@@ -67,13 +67,13 @@ h1 {
     /*background: #1d3846 url(img/bg1.jpg) no-repeat right bottom;*/
 }
 
-#content {
+.headline__content {
     padding: 20px;
     border-radius:  10px 0 0 10px;
     background-color: rgba(0,0,0,.6);
 }
 
-#headline h2 {
+.headline__header {
     margin: 0;
     padding: 0 0 20px 0;
     color: white;
@@ -83,12 +83,7 @@ h1 {
 }
 
 
-#headline p {
-    padding: 0 0 10px 0;
-    color: white;
-}
-
-#headline #subheader {
+.headline__subheader {
     margin: 0;
     padding: 0 0 20px 0;
     border-bottom: 1px solid rgba(0,0,0,.06);
@@ -96,7 +91,12 @@ h1 {
     font-size: 16px;
 }
 
-#headline #form {
+.headline p {
+    padding: 0 0 10px 0;
+    color: white;
+}
+
+.headline__form {
     display: flex;
     display: -webkit-flex;
     -webkit-flex-direction: column;
@@ -108,7 +108,7 @@ h1 {
     background-color: rgba(0,0,0,.6);
 }
 
-#headline #form input {
+.form__input {
     margin-bottom: 10px;
     padding: 5px;
     width: auto;
@@ -120,7 +120,7 @@ h1 {
     line-height: 16px;
 }
 
-#headline #form textarea {
+.form__textarea {
     margin-bottom: 10px;
     padding: 5px;
     width: auto;
@@ -132,7 +132,7 @@ h1 {
     line-height: 16px;
 }
 
-#headline #form h3 {
+.form__header {
     margin: 0;
     padding: 0 0 20px 0;
     color: #fff;
@@ -141,25 +141,25 @@ h1 {
     font-size: 18px;
 }
 
-#content {
+.content {
     padding: 30px 100px;
 
 }
 
-#content h3 {
+.content__header {
     text-align: center;
     font-weight: normal;
     font-size: 24px;
     line-height: 150%;
 }
 
-#content ul {
+.list {
     margin: 0;
     padding: 0;
 
 }
 
-#content ul li {
+.list__item {
     margin: 20px 0;
     padding: 30px;
     border-left: 5px solid rgba(0,0,0,.08);
@@ -168,7 +168,7 @@ h1 {
     font-size: 16px;
 }
 
-#button {
+.button {
     padding: 10px;
     border: 2px solid #fd5;
     border-radius: 9px;
@@ -176,7 +176,7 @@ h1 {
     font-size: 18px;
 }
 
-.button_action_view {
+.button_view_action {
     padding: 6px 10px;
     border: 0px;
     border-radius: 6px;
@@ -184,6 +184,6 @@ h1 {
     font-size: 14px;
 }
 
-#footer {
+.footer {
     border-top: 1px solid rgba(0,0,0,.06);
 }
